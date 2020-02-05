@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1010.0" layoutY="-1.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@other.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="349.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Contract Deatils" textAlignment="CENTER" wrappingWidth="342.9366455078125">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="349.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contract ID" wrappingWidth="103.765380859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="conId" layoutX="520.0" layoutY="181.0" prefHeight="29.0" prefWidth="194.0" />
+      <Button layoutX="861.0" layoutY="494.0" mnemonicParsing="false" onAction="#cancelContract" prefHeight="66.0" prefWidth="119.0" style="-fx-background-color: #404bea;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="704.0" layoutY="494.0" mnemonicParsing="false" onAction="#deleteContractBtn" prefHeight="66.0" prefWidth="119.0" style="-fx-background-color: #404bea;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

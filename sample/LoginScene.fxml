@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="610.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="1011.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@logIn.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="295.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="295.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userName" layoutX="430.0" layoutY="172.0" prefHeight="33.0" prefWidth="190.0" />
+      <Button defaultButton="true" layoutX="688.0" layoutY="409.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #404bea;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button cancelButton="true" layoutX="832.0" layoutY="409.0" mnemonicParsing="false" onAction="#cancelBtn" prefHeight="52.0" prefWidth="113.0" style="-fx-background-color: #404bea;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Text fill="#504ac2" layoutX="320.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO COMPUTER CONSULTANCY FIRM" textAlignment="CENTER" wrappingWidth="391.477294921875">
+         <font>
+            <Font name="Consolas Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="text" layoutX="430.0" layoutY="260.0" prefHeight="34.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>
